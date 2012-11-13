@@ -1,4 +1,5 @@
 <?php
+	include("func.php");
 	if(!isset($_POST['submit'])){
 	   $title = "Fun Test!";
 	   $active = "true";
@@ -17,7 +18,7 @@
 	   $pname = $_POST['pname'];
 	   $starthour = $_POST['starthour'];
 	   $startmin = $_POST['startmin'];
-	   $endhour = $_POST['starthour'];
+	   $endhour = $_POST['endhour'];
 	   $endmin = $_POST['endmin'];
 	   $sound = $_POST['sound'];
 	   $dow_arr = $_POST['dow_arr'];
@@ -28,7 +29,6 @@
 	foreach($dow_arr as $day){
 	   $dow.=$day.",";
 	}
-	print($sound);
 
 	//get rid of the trailing comma
 	$dow = rtrim($dow,",");
@@ -55,5 +55,8 @@
     fwrite($handle,$schedules->asXML());
     fclose($handle);
 
-	//echo $schedules->asXML();
+    myHeader();
+    showBells();
+    myFooter();
+ 
 ?>

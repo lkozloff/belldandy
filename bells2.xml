@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<schedules>
+   <schedule>
+      <title>Normal Schedule</title>
+      <active>true</active>
+
+      <periods>
+
+      	<period>
+	  <name>Period 1</name>
+          <starttime>11:17</starttime>
+          <endtime>11:18</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 2</name>
+          <starttime>11:19</starttime>
+          <endtime>11:20</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Lunch</name>
+          <starttime>11:21</starttime>
+          <endtime>11:22</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 3</name>
+          <starttime>11:23</starttime>
+          <endtime>11:24</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 4</name>
+          <starttime>11:25</starttime>
+          <endtime>11:26</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+
+      </periods>
+
+   </schedule>
+
+<schedule>
+      <title>Compressed Schedule</title>
+      <active>false</active>
+
+      <periods>
+
+      	<period>
+	  <name>Period 1</name>
+          <starttime>11:17</starttime>
+          <endtime>11:18</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 2</name>
+          <starttime>11:19</starttime>
+          <endtime>11:20</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Lunch</name>
+          <starttime>11:21</starttime>
+          <endtime>11:22</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 3</name>
+          <starttime>11:23</starttime>
+          <endtime>11:24</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 4</name>
+          <starttime>11:25</starttime>
+          <endtime>11:26</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+
+      </periods>
+
+   </schedule>
+
+<schedule>
+      <title>Dan's Bizzaro Schedule</title>
+      <active>true</active>
+
+      <periods>
+
+      	<period>
+	  <name>Period 1</name>
+          <starttime>11:17</starttime>
+          <endtime>11:18</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 2</name>
+          <starttime>11:19</starttime>
+          <endtime>11:20</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Lunch</name>
+          <starttime>11:21</starttime>
+          <endtime>11:22</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 3</name>
+          <starttime>11:23</starttime>
+          <endtime>11:24</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+	  <name>Period 4</name>
+          <starttime>11:25</starttime>
+          <endtime>11:26</endtime>
+	  <dow>MON,TUE,WED,THU,FRI</dow>
+	  <sound>bell.mp3</sound>
+        </period> 
+
+
+      </periods>
+
+   </schedule>
+<schedule><title>Fun Test!</title><active>true</active><periods><period><name>P1</name><starttime>18:15</starttime><endtime>18:16</endtime><dow>MON,TUE,WED,THU,FRI</dow><sound>bell.mp3</sound></period></periods></schedule></schedules>
