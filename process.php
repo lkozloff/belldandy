@@ -24,6 +24,7 @@
 		$ehour = $etime[0];
 		$eminute = $etime[1];
 		
+		//print out the actual cron statements, formatted nicely
 		print("\n    #- $name -#\n");
 		print("$sminute $shour * * $dow $user\t $command $source_dir$sound\n");
 		print("$eminute $ehour * * $dow $user\t $command $source_dir$sound\n");
