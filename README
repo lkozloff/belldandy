@@ -1,0 +1,10 @@
+Belldandy - a simple, web-based bell system.
+
+Required: 
+	- mpg321
+	- webserver with PHP support
+	- an OS that has cron
+
+Background:
+   Belldandy was written for Logos International School to replace the iPod touch that had been installed when no local company could be sourced for a 'real' bell system. While, in principal, this could be run from any computer it was created with the vision of using a Raspberry Pi.
+
