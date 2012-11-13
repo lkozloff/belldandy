@@ -1,0 +1,26 @@
+td{
+	padding: 5px 25px 5px 5px;
+	border-left: solid black 1px;
+}
+tr.c0{
+	background-color: rgb(240,240,240);
+}
+tr.c1{
+	background-color: rgb(255,255,255);
+}
+
+tr.h{
+	 font-weight: bold;
+	 border-bottom: solid black 2px;
+}
+
+table{
+	border-collapse: collapse;
+	border: solid black 1px;
+}
+.false{
+	color: red;
+}
+.true{
+	color: green;
+}
