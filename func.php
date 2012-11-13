@@ -39,5 +39,28 @@
            $prepend = 0;
         }
    }
+
+    function findSchedule($schedules,$key){
+           $selection = null;
+
+           foreach($schedules as $schedule){
+             if(strcmp($schedule->title,$key)==0){
+                $selection = $schedule;
+             }
+           }
+           
+           return $selection;
+    } 
+
+   function findPeriod($periods,$key){
+       $selection = null;
+       foreach($period as $periods){
+          if(strcmp($period->name,$key)==0){
+		$selection = $period;
+	  }
+	}
+	
+	return $selection;
+   }
 ?>
 

@@ -3,7 +3,7 @@ td{
 	border-left: solid black 1px;
 }
 tr.c0{
-	background-color: rgb(240,240,240);
+	background-color: rgb(250,250,250);
 }
 tr.c1{
 	background-color: rgb(255,255,255);
@@ -12,6 +12,7 @@ tr.c1{
 tr.h{
 	 font-weight: bold;
 	 border-bottom: solid black 2px;
+	 background-color: rgb(240,240,255);	
 }
 
 table{

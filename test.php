@@ -1,5 +1,7 @@
 <?php
-	$hour="4:45";
-	$h = explode(":",$hour);
-	foreach($h as $s){print("$s\n");}
+	include("func.php");
+	$sched = simplexml_load_file('bells.xml');
+	$suc =findSchedule($sched,"Normal Schedule");
+	$suc->active = "false";
+	echo $sched->asXML();
 ?>
