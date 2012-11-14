@@ -44,7 +44,7 @@
            $selection = null;
 
            foreach($schedules as $schedule){
-             if(strcmp($schedule->title,$key)==0){
+             if($schedule->sid==$key){
                 $selection = $schedule;
              }
            }
@@ -52,15 +52,63 @@
            return $selection;
     } 
 
-   function findPeriod($periods,$key){
+   function findPeriod($schedule,$key){
        $selection = null;
-       foreach($period as $periods){
-          if(strcmp($period->name,$key)==0){
+       foreach($schedule as $periods){
+       foreach($periods as $period){
+          if($period->pid==$key){
 		$selection = $period;
 	  }
 	}
+	}
 	
 	return $selection;
+   }
+
+   function generateTimeSelect($name,$curtimeval){
+	 print("<select name=\"".$name."hour\">");
+                $stime = explode(":",$curtimeval);
+                $shour = $stime[0];
+                $smin = $stime[1];
+                $selected="";
+
+                for($i=7;$i<24;$i++){
+                        if($i<10)$i="0".$i;
+                        if($i==$shour) $selected = "selected";
+                        print("<option $selected>$i</option>");
+                        $selected="";
+                }
+
+                for($i=0;$i<7;$i++) print("<option>0$i</option>");
+                print("</select>"); //end hour selection
+
+                print(":");
+                print("<select name=\"startmin\">");
+                
+                for($i=0;$i<60;$i++){
+                        if($i<10)$i="0".$i;
+                        if($i==$smin) $selected = "selected";
+                        print("<option $selected>$i</option>");
+                        $selected="";
+                }
+                print("</select>"); //end min selection
+
+   }
+
+   function generateDOWSelect($name,$curdow){
+	$possDOW=array("MON","TUE","WED","THU","FRI","SAT","SUN");
+	$curdow = explode(",",$curdow);
+	$checked="";
+
+	foreach($possDOW as $thisDOW){
+	   foreach($curdow as $testdow){
+		   if(strcmp($testdow,$thisDOW)==0) $checked="checked";
+	   }
+
+	print("<input type = \"checkbox\" $checked name=\"DOW$name\" value =".$thisDOW.">".$thisDOW);
+	$checked="";
+	}
+
    }
 ?>
 

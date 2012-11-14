@@ -2,18 +2,21 @@
 <schedules>
    <schedule>
       <title>Normal Schedule</title>
+      <sid>1</sid>
       <active>true</active>
 
       <periods>
         <period>
+		<pid>1</pid>
 	        <name>Homeroom Warning</name>
-            <starttime>08:00</starttime>
-            <endtime>08:05</endtime>
+            <starttime>08:05</starttime>
+            <endtime>08:15</endtime>
 	        <dow>MON,TUE,WED,FRI</dow>
         	<sound>bell.mp3</sound>
         </period> 
 
       	<period>
+		<pid>2</pid>
 	        <name>Homeroom</name>
             <starttime>08:05</starttime>
             <endtime>08:20</endtime>
@@ -22,6 +25,7 @@
         </period> 
         
         <period>
+		<pid>3</pid>
 	        <name>Period 1</name>
             <starttime>08:25</starttime>
             <endtime>09:50</endtime>
@@ -30,6 +34,7 @@
         </period>
 
         <period>
+		<pid>4</pid>
 	        <name>Period 2</name>
             <starttime>09:55</starttime>
             <endtime>11:20</endtime>
@@ -38,6 +43,7 @@
         </period>  
 
         <period>
+		<pid>5</pid>
 	        <name>Lunch</name>
             <starttime>11:20</starttime>
             <endtime>12:10</endtime>
@@ -46,6 +52,7 @@
         </period>
       	
         <period>
+		<pid>6</pid>
 	        <name>Period 3</name>
             <starttime>12:15</starttime>
             <endtime>13:40</endtime>
@@ -54,6 +61,7 @@
         </period>
 
         <period>
+		<pid>7</pid>
 	        <name>Period 4</name>
             <starttime>13:45</starttime>
             <endtime>15:10</endtime>
@@ -65,10 +73,12 @@
    </schedule>
        <schedule>
       <title>Compressed Schedule</title>
+      <sid>2</sid>
       <active>true</active>
 
       <periods>
         <period>
+		<pid>1</pid>
 	        <name>Homeroom Warning</name>
             <starttime>08:00</starttime>
             <endtime>08:05</endtime>
@@ -77,6 +87,7 @@
         </period> 
 
       	<period>
+		<pid>2</pid>
 	        <name>Homeroom</name>
             <starttime>08:05</starttime>
             <endtime>08:20</endtime>
@@ -86,6 +97,7 @@
         
         <period>
 	        <name>Period 1</name>
+		<pid>3</pid>
             <starttime>08:25</starttime>
             <endtime>09:40</endtime>
 	        <dow>THU</dow>
@@ -94,6 +106,7 @@
 
         <period>
 	        <name>Period 2</name>
+		<pid>4</pid>
             <starttime>09:45</starttime>
             <endtime>11:00</endtime>
 	        <dow>THU</dow>
@@ -102,6 +115,7 @@
 
         <period>
 	        <name>Lunch</name>
+		<pid>5</pid>
             <starttime>11:00</starttime>
             <endtime>11:25</endtime>
 	        <dow>THU</dow>
@@ -110,6 +124,7 @@
       	
         <period>
 	        <name>Period 3</name>
+		<pid>6</pid>
             <starttime>11:30</starttime>
             <endtime>12:45</endtime>
 	        <dow>THU</dow>
@@ -118,6 +133,7 @@
 
         <period>
 	        <name>Period 4</name>
+		<pid>7</pid>
             <starttime>12:50</starttime>
             <endtime>14:05</endtime>
 	        <dow>THU</dow>
