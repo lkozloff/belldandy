@@ -39,7 +39,6 @@
 		   }
 		   $value.=$testdow.",";
 		}
-		$value=rtrim($value,",");
 		print("<div style=\"float:left;color:rgb(220,220,220);\">$newdow&nbsp;</div>");
            }
 		
@@ -54,6 +53,9 @@
 	}
 	
 	//now save our stuff	
+	//clean up, just in case there are some funky commmas
+	$value=rtrim($value,",");
+	$value=ltrim($value,",");
 	$duc->$modifiedData=$value;
 
 	//print($schedules->asXML());
