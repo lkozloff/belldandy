@@ -2,10 +2,10 @@
 <head>
 <title>Belldandy - the Logos bell system!</title>
 <link rel = "stylesheet" type="text/css" href="styles.css"/>
-<script src="jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
-<script src="jquery.jeditable.time.js" type="text/javascript" charset="utf-8"></script>
-<script src="jquery.jeditable.ajaxupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.jeditable.time.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.jeditable.ajaxupload.js" type="text/javascript" charset="utf-8"></script>
 <script src="jquery.jeditable.checkbox.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
  $(document).ready(function() {
