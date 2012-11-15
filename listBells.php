@@ -6,6 +6,7 @@
 <script src="jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
 <script src="jquery.jeditable.time.js" type="text/javascript" charset="utf-8"></script>
 <script src="jquery.jeditable.ajaxupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.jeditable.checkbox.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
  $(document).ready(function() {
      $('.edit').editable('save.php', {
@@ -25,13 +26,21 @@
         submit    : 'OK',
         tooltip   : "Click to edit..."
     });
-    $(".ajaxupload").editable("upload.php", { 
+    //not yet implemented
+    /*$(".ajaxupload").editable("upload.php", { 
         indicator : "<img src='img/indicator.gif'>",
         type      : 'ajaxupload',
         submit    : 'Upload',
         cancel    : 'Cancel',
         tooltip   : "Click to upload..."
+    });*/
+    $(".cbox").editable("save.php", { 
+        type      : 'checkbox',
+        submit    : 'OK',
+        cancel    : 'Cancel',
+	checkbox: { trueValue: 'true', falseValue: 'false'}
     });
+
  });
 </script>
 </head>
@@ -42,21 +51,22 @@
 	$prepend = 0;
 	foreach($schedules as $schedule){
 	   print("<h1 class=\"$schedule->active\">");
-	   print($schedule->title);
+	   print("<div class=\"cbox\" id=\"$schedule->sid.0.active\">".$schedule->title."</div></h1>");
 	   print("<table>");
 	   print("<tr class=\"h\"><td>Period</td><td>Start</td><td>End</td><td>DoW</td><td>Sound</td></tr>");
 
 	   foreach($schedule->periods->period as $period){
+		$elementID=$schedule->sid.".".$period->pid;
 		print("<tr class=\"c$prepend\">");
-		print("<td class=\"edit\" id=\"$schedule->sid.$period->pid.name\">".$period->name."</td>");
-		print("<td class=\"timepicker\"id=\"$schedule->sid.$period->pid.starttime\">".$period->starttime."</td>");
-		print("<td class=\"timepicker\" id=\"$schedule->sid.$period->pid.endtime\">".$period->endtime."</td>");
+		print("<td class=\"edit\" id=\"$elementID.name\">".$period->name."</td>");
+		print("<td class=\"timepicker\"id=\"$elementID.starttime\">".$period->starttime."</td>");
+		print("<td class=\"timepicker\" id=\"$elementID.endtime\">".$period->endtime."</td>");
 
  		print("<td>");
-                generateDOWSelect($period->name,$period->dow);
+                generateDOWSelect($period->name,$period->dow,$elementID);
                 print("</td>");
 
-		print("<td class=\"ajaxupload\"id=\"$schedule->sid.$period->pid.sound\">".$period->sound."</td>");
+		print("<td class=\"ajaxupload\"id=\"$elementID.sound\">".$period->sound."</td>");
 		print("</tr>");
 
 		$prepend++;

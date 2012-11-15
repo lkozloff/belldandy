@@ -20,7 +20,7 @@ table{
 	border: solid black 1px;
 }
 .false{
-	color: red;
+	color: rgb(220,220,220);
 }
 .true{
 	color: green;

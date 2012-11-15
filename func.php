@@ -95,18 +95,18 @@
 
    }
 
-   function generateDOWSelect($name,$curdow){
+   function generateDOWSelect($name,$curdow,$id){
 	$possDOW=array("MON","TUE","WED","THU","FRI","SAT","SUN");
 	$curdow = explode(",",$curdow);
-	$checked="";
+	$checked="rgb(220,220,220);";
 
 	foreach($possDOW as $thisDOW){
 	   foreach($curdow as $testdow){
-		   if(strcmp($testdow,$thisDOW)==0) $checked="checked";
+		   if(strcmp($testdow,$thisDOW)==0) $checked="green";
 	   }
 
-	print("<input type = \"checkbox\" $checked name=\"DOW$name\" value =".$thisDOW.">".$thisDOW);
-	$checked="";
+	print("<div style=\"float:left;color:$checked\" class=\"cbox\" id=\"$id.dow.$thisDOW\">".$thisDOW."&nbsp; </div>");
+	$checked="rgb(220,220,220);";
 	}
 
    }

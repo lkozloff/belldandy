@@ -9,8 +9,8 @@
         <period>
 		<pid>1</pid>
 	        <name>Homeroom Warning</name>
-            <starttime>08:05</starttime>
-            <endtime>08:15</endtime>
+            <starttime>08:00</starttime>
+            <endtime>08:05</endtime>
 	        <dow>MON,TUE,WED,FRI</dow>
         	<sound>bell.mp3</sound>
         </period> 
@@ -137,6 +137,77 @@
             <starttime>12:50</starttime>
             <endtime>14:05</endtime>
 	        <dow>THU</dow>
+        	<sound>bell.mp3</sound>
+        </period>
+      </periods>
+
+   </schedule>
+<schedule>
+      <title>Floating Schedule</title>
+      <sid>3</sid>
+      <active>false</active>
+
+      <periods>
+        <period>
+		<pid>1</pid>
+	        <name>Homeroom Warning</name>
+            <starttime>08:00</starttime>
+            <endtime>08:05</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period> 
+
+      	<period>
+		<pid>2</pid>
+	        <name>Homeroom</name>
+            <starttime>08:05</starttime>
+            <endtime>08:20</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period> 
+        
+        <period>
+		<pid>3</pid>
+	        <name>Period 1</name>
+            <starttime>08:25</starttime>
+            <endtime>09:50</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period>
+
+        <period>
+		<pid>4</pid>
+	        <name>Period 2</name>
+            <starttime>09:55</starttime>
+            <endtime>11:20</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period>  
+
+        <period>
+		<pid>5</pid>
+	        <name>Lunch</name>
+            <starttime>11:20</starttime>
+            <endtime>12:10</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period>
+      	
+        <period>
+		<pid>6</pid>
+	        <name>Period 3</name>
+            <starttime>12:15</starttime>
+            <endtime>13:40</endtime>
+	        <dow/>
+        	<sound>bell.mp3</sound>
+        </period>
+
+        <period>
+		<pid>7</pid>
+	        <name>Period 4</name>
+            <starttime>13:45</starttime>
+            <endtime>15:10</endtime>
+	        <dow/>
         	<sound>bell.mp3</sound>
         </period>
       </periods>
