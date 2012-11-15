@@ -1,7 +1,7 @@
 <?php
 	$command = "/usr/bin/mpg321";
 	$user = "root";
-	$source_dir = "/var/www/";
+	$source_dir = "/var/www/belldandy/";
 	$schedules=simplexml_load_file('bells.xml');
 
 	foreach($schedules as $schedule){

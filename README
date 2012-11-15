@@ -11,6 +11,6 @@ Background:
 
 Installation:
 Put files in an appropriate directory with appropriate permissions for web access.
-Make a copy of your system crontab.
-Add a cron job to run process.php at appropriate intervals to process bells.xml into the system crontab.
+Make a copy of your system crontab in cron.stub and update directories as appropriate
+add the gencron.sh job run with appropriate permissions at an appropriate interval
 Be very mindful of security. Don't want arbitrary jobs getting pushed in with root access!
