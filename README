@@ -8,3 +8,9 @@ Required:
 Background:
    Belldandy was written for Logos International School to replace the iPod touch that had been installed when no local company could be sourced for a 'real' bell system. While, in principal, this could be run from any computer it was created with the vision of using a Raspberry Pi.
 
+
+Installation:
+Put files in an appropriate directory with appropriate permissions for web access.
+Make a copy of your system crontab.
+Add a cron job to run process.php at appropriate intervals to process bells.xml into the system crontab.
+Be very mindful of security. Don't want arbitrary jobs getting pushed in with root access!
