@@ -6,7 +6,7 @@
 <script src="js/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.jeditable.time.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.jeditable.ajaxupload.js" type="text/javascript" charset="utf-8"></script>
-<script src="jquery.jeditable.checkbox.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.jeditable.checkbox.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
  $(document).ready(function() {
      $('.edit').editable('save.php', {
