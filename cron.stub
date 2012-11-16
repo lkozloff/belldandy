@@ -14,5 +14,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 
 # generate new bells stub every 5 minutes
-*/5 * * * *	root /var/www/belldandy/gencron.sh
+* * * * *	root /var/www/belldandy/gencron.sh
 

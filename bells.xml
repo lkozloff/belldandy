@@ -11,7 +11,7 @@
 	        <name>Homeroom Warning</name>
             <starttime>08:00</starttime>
             <endtime>08:05</endtime>
-	        <dow>MON,TUE,WED,FRI</dow>
+	        <dow>MON,TUE,WED,FRI,SAT</dow>
         	<sound>bell.mp3</sound>
         </period> 
 

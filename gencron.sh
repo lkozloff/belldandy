@@ -1,3 +1,3 @@
 #!/bin/sh
-cat /var/www/belldandy/cron.stub > /etc/crontab
-php /var/www/belldandy/process.php >> /etc/crontab
+/var/www/belldandy/process.php
+cat /var/www/belldandy/cron.stub /tmp/bell.stub > /etc/crontab
