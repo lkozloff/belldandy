@@ -43,8 +43,43 @@
 
  });
 </script>
+<script type="text/javascript">
+    <!--
+    function updateTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="";
+        } else {
+            v+=""
+        }
+	
+	if(hours < 10){
+	   hours = "0" + hours;
+	}
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+	document.getElementById('time').style.left=seconds+"px";
+	document.getElementById('time').style.top=minutes*5+"px";
+    }
+    updateTime();
+    //-->
+</script>
+
 </head>
 <body>
+ <div style="font-size:350%;font-family: sans-serif;color:rgb(0,0,228);height:500px"/>
+	<h1><span id="time" style="position:relative;"/></h1>
+</div>
 <?php
 	include("func.php");
 	$schedules=simplexml_load_file('bells.xml');
